@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
   overflow: hidden;
   font-family: 'Inter';
   background: #fdfdfd;
-  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iI0U4QjA1OSIvPjwvc3ZnPg=='),
+  cursor: url('../public/cursor.svg'),
     auto;
 }
 
@@ -18,10 +23,6 @@ a {
   pointer-events: all;
   color: rgb(161, 10, 10);
   text-decoration: none;
-}
-
-svg {
-  fill: rgb(192, 24, 24);
 }
 
 @keyframes fade-in {
@@ -43,4 +44,106 @@ svg {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 0;
+}
+
+.ball {
+  position: relative;
+  bottom: 40px;
+  left: calc(100% - 20px);
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  animation: ball-move8234 3s ease-in-out 1s infinite alternate;
+}
+
+.ball::after {
+  position: absolute;
+  content: '';
+  top: 25px;
+  right: 5px;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.bar {
+  width: 230px;
+  height: 8.5px;
+  background: #4a4a4a;
+  border-radius: 30px;
+  transform: rotate(-15deg);
+  animation: up-down6123 3s ease-in-out 1s infinite alternate;
+}
+
+@keyframes up-down6123 {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes ball-move8234 {
+  from {
+    left: calc(100% - 40px);
+    transform: rotate(360deg);
+  }
+
+  to {
+    left: calc(0% - 20px);
+    transform: rotate(0deg);
+  }
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #ffffff;
+  display: block; /* Added to ensure the <a> fills the entire <li> */
+  text-align: center; /* Center the text inside the <a> tag */
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  margin: 8px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgb(179, 179, 179);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #000000; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #ffffff;
 }
