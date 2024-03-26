@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeFile from "../assets/Internship Certificate- Abel.pdf";
+import ResumeFile from "../assets/Saurabh.pdf";
 
 export const Resume = () => {
   return (

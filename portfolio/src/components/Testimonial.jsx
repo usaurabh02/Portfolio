@@ -6,9 +6,9 @@ import Aditya from "../assets/aditya.png";
 
 const TestimonialItem = ({ image, name, position, verify }) => {
   return (
-    <div class=" bg-white border border-gray-200 rounded-lg shadow-xl ">
-      <img class="rounded-t-lg w-[380px] h-[380px]" src={image} alt="" />
-      <div class="p-5">
+    <div className=" bg-white border border-gray-200 rounded-lg shadow-xl ">
+      <img className="rounded-t-lg w-[380px] h-[380px]" src={image} alt="" />
+      <div className="p-5">
         <p
           className="text-[20px] mb-2"
           style={{

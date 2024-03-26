@@ -209,6 +209,7 @@ export const Contact = () => {
                   <input
                     type="text"
                     placeholder="John Doe"
+                    name="Full Name"
                     required
                     className="block w-full px-5 py-[5px] mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
@@ -229,6 +230,7 @@ export const Contact = () => {
                   <input
                     type="email"
                     placeholder="johndoe@example.com"
+                    name="Email"
                     required
                     className="block w-full px-5 py-[5px] mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
@@ -249,6 +251,7 @@ export const Contact = () => {
                   <textarea
                   className="block w-full px-5 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-30 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
+                    name="Message"
                     required
                   ></textarea>
                 </div>

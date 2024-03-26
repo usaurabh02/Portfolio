@@ -9,9 +9,9 @@ import Mlp from "../assets/ml1.png";
 
 const ProjectItem = ({ image, name, organisation, verify }) => {
   return (
-    <div class=" bg-white border border-gray-200 rounded-lg shadow-xl ">
-      <img class="rounded-t-lg w-[500px] h-[250px] bg-transparent" src={image} alt="" />
-      <div class="p-5">
+    <div className=" bg-white border border-gray-200 rounded-lg shadow-xl ">
+      <img className="rounded-t-lg w-[500px] h-[250px] bg-transparent" src={image} alt="" />
+      <div className="p-5">
         <p
           className="text-[20px] mb-2"
           style={{
@@ -41,7 +41,7 @@ const ProjectItem = ({ image, name, organisation, verify }) => {
         <a href={verify} target="_blank" rel="noopener noreferrer">
         <button className="inline-flex items-center p-2 mt-2 text-sm font-medium text-center text-white bg-[#6486B4] rounded-lg hover:bg-[#B0C9EB]">Visit
           <svg
-            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+          className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -49,9 +49,9 @@ const ProjectItem = ({ image, name, organisation, verify }) => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
@@ -109,7 +109,7 @@ export const Project = () => {
         image={Vambox}
         name="Vambox"
         organisation="India's first free WebVR player for 360 content streaming."
-        verify={"https://reealtech.com/"}
+        verify={"https://vam-box.vercel.app/"}
       />
       <ProjectItem
       image={Vamverse}
