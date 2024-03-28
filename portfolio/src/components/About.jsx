@@ -40,9 +40,9 @@ export const About = () => {
           and those who dare to redefine. I belong to the latter, a Computer
           Engineering graduate with a relentless passion for crafting immersive
           experiences beyond reality. My journey in the tech world has been a
-          thrilling adventure, driven by a thirst for knowledge. From the early days of my
-          career, I knew that I wanted to do more than just follow the trends -
-          I wanted to set them.
+          thrilling adventure, driven by a thirst for knowledge. From the early
+          days of my career, I knew that I wanted to do more than just follow
+          the trends - I wanted to set them.
         </div>
         <div
           style={{

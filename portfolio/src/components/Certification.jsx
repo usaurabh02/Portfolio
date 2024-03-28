@@ -8,7 +8,6 @@ import MsAZ from "../assets/msaz.png";
 import Sfpc from "../assets/sfpc.png";
 import Dlsp from "../assets/dlsp.png";
 
-
 const CertificationItem = ({ image, name, organisation, verify }) => {
   return (
     <div className=" bg-white border border-gray-200 rounded-lg shadow-xl ">
@@ -39,24 +38,25 @@ const CertificationItem = ({ image, name, organisation, verify }) => {
         >
           {organisation}
         </p>
-       
+
         <a href={verify} target="_blank" rel="noopener noreferrer">
-        <button className="inline-flex items-center p-2 mt-2 text-sm font-medium text-center text-white bg-[#6486B4] rounded-lg hover:bg-[#B0C9EB]">Verify
-          <svg
-          className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
+          <button className="inline-flex items-center p-2 mt-2 text-sm font-medium text-center text-white bg-[#6486B4] rounded-lg hover:bg-[#B0C9EB]">
+            Verify
+            <svg
+              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
           </button>
         </a>
       </div>
@@ -87,7 +87,7 @@ export const Certification = () => {
               letterSpacing: 0.5,
             }}
           >
-           CERTIFICATION
+            CERTIFICATION
           </p>
         </div>
         <div
@@ -101,51 +101,63 @@ export const Certification = () => {
             image={GcpA}
             name="Associate Cloud Engineer"
             organisation="Google Cloud"
-            verify={"https://www.credential.net/a8d15dd8-05f4-4500-8b95-4eccc7c7534a"}
+            verify={
+              "https://www.credential.net/a8d15dd8-05f4-4500-8b95-4eccc7c7534a"
+            }
           />
           <CertificationItem
             image={GcpCd}
             name="Cloud Digital Leader"
             organisation="Google Cloud"
-            verify={"https://www.credential.net/dce9bd94-dbd3-4dbc-bd69-f7044c66e328"}
+            verify={
+              "https://www.credential.net/dce9bd94-dbd3-4dbc-bd69-f7044c66e328"
+            }
           />
           <CertificationItem
             image={AwsCa}
             name="AWS Academy Cloud Architecting"
             organisation="Amazon Web Services"
-            verify={"https://www.credly.com/badges/377f3a53-f0ba-46a5-9c56-48e9b18280bf?source=linked_in_profile"}
+            verify={
+              "https://www.credly.com/badges/377f3a53-f0ba-46a5-9c56-48e9b18280bf?source=linked_in_profile"
+            }
           />
           <CertificationItem
             image={AwsCf}
             name="AWS Academy Cloud Foundations"
             organisation="Amazon Web Services"
-            verify={"https://www.credly.com/badges/e8e11e02-e6cd-4136-bed8-503704f02cb2?source=linked_in_profile"}
+            verify={
+              "https://www.credly.com/badges/e8e11e02-e6cd-4136-bed8-503704f02cb2?source=linked_in_profile"
+            }
           />
           <CertificationItem
-          image={MsAZ}
-          name="Azure Fundamentals"
-          organisation="Microsoft Azure"
-          verify={"https://www.credly.com/badges/60e5e28c-ebce-49da-9894-e27f9df6ccc9?source=linked_in_profile"}
-        />
-        <CertificationItem
-        image={MsPP}
-        name="Power Platform Fundamentals"
-        organisation="Microsoft Azure"
-        verify={"https://www.credly.com/badges/86fbe40d-5e58-4310-8b4d-b091cba2c33a?source=linked_in_profile"}
-      />
-      <CertificationItem
-      image={Dlsp}
-      name="Deep Learning Specialization"
-      organisation="Coursera"
-      verify={"https://coursera.org/share/41a81381ae70721aad0682b3b77524d5"}
-    />
-
+            image={MsAZ}
+            name="Azure Fundamentals"
+            organisation="Microsoft Azure"
+            verify={
+              "https://www.credly.com/badges/60e5e28c-ebce-49da-9894-e27f9df6ccc9?source=linked_in_profile"
+            }
+          />
+          <CertificationItem
+            image={MsPP}
+            name="Power Platform Fundamentals"
+            organisation="Microsoft Azure"
+            verify={
+              "https://www.credly.com/badges/86fbe40d-5e58-4310-8b4d-b091cba2c33a?source=linked_in_profile"
+            }
+          />
+          <CertificationItem
+            image={Dlsp}
+            name="Deep Learning Specialization"
+            organisation="Coursera"
+            verify={
+              "https://coursera.org/share/41a81381ae70721aad0682b3b77524d5"
+            }
+          />
         </div>
       </div>
     </div>
   );
 };
-
 
 // <CertificationItem
 // image={Sfpc}

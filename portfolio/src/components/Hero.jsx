@@ -29,7 +29,6 @@ import { Certification } from "./Certification";
 import { Contact } from "./Contact";
 import { Resume } from "./Resume";
 
-
 function Rig(props) {
   const ref = useRef();
   const scroll = useScroll();
@@ -47,8 +46,19 @@ function Rig(props) {
   return <group ref={ref} {...props} />;
 }
 
-function Carousel({ radius = 1.4, count = 8, openModalAbout,openModalExperience,openModalSkill,openModalProject,openModalTestimonial,openModalCertification,openModalContact,openModalResume}) {
-  const images = [ img1,img8,img4, img6,img3,img5, img7 ,img2];
+function Carousel({
+  radius = 1.4,
+  count = 8,
+  openModalAbout,
+  openModalExperience,
+  openModalSkill,
+  openModalProject,
+  openModalTestimonial,
+  openModalCertification,
+  openModalContact,
+  openModalResume,
+}) {
+  const images = [img1, img8, img4, img6, img3, img5, img7, img2];
   return Array.from({ length: count }, (_, i) => (
     <Card
       key={i}
@@ -72,7 +82,19 @@ function Carousel({ radius = 1.4, count = 8, openModalAbout,openModalExperience,
   ));
 }
 
-function Card({ url,index,openModalAbout,openModalExperience,openModalSkill,openModalProject,openModalTestimonial,openModalCertification,openModalContact,openModalResume, ...props }) {
+function Card({
+  url,
+  index,
+  openModalAbout,
+  openModalExperience,
+  openModalSkill,
+  openModalProject,
+  openModalTestimonial,
+  openModalCertification,
+  openModalContact,
+  openModalResume,
+  ...props
+}) {
   const ref = useRef();
   const [hovered, setHovered] = useState(false);
 
@@ -83,7 +105,7 @@ function Card({ url,index,openModalAbout,openModalExperience,openModalSkill,open
     } else if (index === 1) {
       openModalExperience(); // Open Experience modal if index is 1
     } else if (index === 2) {
-      openModalSkill(); // Open Skill modal if index is 2 
+      openModalSkill(); // Open Skill modal if index is 2
     } else if (index === 3) {
       openModalProject(); // Open Project modal if index is 3
     } else if (index === 4) {
@@ -118,20 +140,18 @@ function Card({ url,index,openModalAbout,openModalExperience,openModalSkill,open
   });
 
   return (
-    
-      <Image
-        ref={ref}
-        url={url}
-        transparent
-        side={THREE.DoubleSide}
-        onPointerOver={pointerOver}
-        onPointerOut={pointerOut}
-        onClick={handleClick}
-        {...props}
-      >
-        <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
-      </Image>
-
+    <Image
+      ref={ref}
+      url={url}
+      transparent
+      side={THREE.DoubleSide}
+      onPointerOver={pointerOver}
+      onPointerOut={pointerOut}
+      onClick={handleClick}
+      {...props}
+    >
+      <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
+    </Image>
   );
 }
 
@@ -168,9 +188,16 @@ const FOV_THRESHOLD_7 = 600;
 const FOV_THRESHOLD_8 = 550;
 const FOV_THRESHOLD_9 = 500;
 
-
-
-const Scene = ({ openModalAbout, openModalExperience, openModalSkill,openModalProject,openModalTestimonial,openModalCertification,openModalContact,openModalResume }) => {
+const Scene = ({
+  openModalAbout,
+  openModalExperience,
+  openModalSkill,
+  openModalProject,
+  openModalTestimonial,
+  openModalCertification,
+  openModalContact,
+  openModalResume,
+}) => {
   const { camera } = useThree();
   const fov = useRef(15);
 
@@ -178,23 +205,23 @@ const Scene = ({ openModalAbout, openModalExperience, openModalSkill,openModalPr
     const handleResize = () => {
       if (window.innerWidth > FOV_THRESHOLD_1) {
         fov.current = 15;
-    } else if (window.innerWidth > FOV_THRESHOLD_2) {
-      fov.current = 15;
-  } else if (window.innerWidth > FOV_THRESHOLD_3) {
-    fov.current = 16;
-  } else if (window.innerWidth > FOV_THRESHOLD_4) {
+      } else if (window.innerWidth > FOV_THRESHOLD_2) {
+        fov.current = 15;
+      } else if (window.innerWidth > FOV_THRESHOLD_3) {
+        fov.current = 16;
+      } else if (window.innerWidth > FOV_THRESHOLD_4) {
         fov.current = 17;
       } else if (window.innerWidth > FOV_THRESHOLD_5) {
         fov.current = 18;
-    } else if (window.innerWidth > FOV_THRESHOLD_6) {
+      } else if (window.innerWidth > FOV_THRESHOLD_6) {
         fov.current = 20;
-    } else if (window.innerWidth > FOV_THRESHOLD_7) {
+      } else if (window.innerWidth > FOV_THRESHOLD_7) {
         fov.current = 21;
-    } else if (window.innerWidth > FOV_THRESHOLD_8) {
+      } else if (window.innerWidth > FOV_THRESHOLD_8) {
         fov.current = 22.5;
-    } else if (window.innerWidth > FOV_THRESHOLD_9) {
+      } else if (window.innerWidth > FOV_THRESHOLD_9) {
         fov.current = 24.5;
-    }  else {
+      } else {
         fov.current = 30;
       }
       camera.fov = fov.current;
@@ -214,7 +241,16 @@ const Scene = ({ openModalAbout, openModalExperience, openModalSkill,openModalPr
       <fog attach="fog" args={["#a79", 8.5, 12]} />
       <ScrollControls damping={0.4} infinite={true}>
         <Rig rotation={[0, 0, 0.15]}>
-          <Carousel openModalAbout={openModalAbout} openModalExperience={openModalExperience} openModalSkill={openModalSkill} openModalProject={openModalProject} openModalTestimonial={openModalTestimonial} openModalCertification={openModalCertification} openModalContact={openModalContact} openModalResume={openModalResume}/>
+          <Carousel
+            openModalAbout={openModalAbout}
+            openModalExperience={openModalExperience}
+            openModalSkill={openModalSkill}
+            openModalProject={openModalProject}
+            openModalTestimonial={openModalTestimonial}
+            openModalCertification={openModalCertification}
+            openModalContact={openModalContact}
+            openModalResume={openModalResume}
+          />
         </Rig>
         <Banner position={[0, -0.15, 0]} />
       </ScrollControls>
@@ -236,7 +272,7 @@ export const Hero = () => {
   const openModalAbout = () => {
     setIsOpenAbout(true);
   };
-  
+
   const closeModalAbout = () => {
     setIsOpenAbout(false);
   };
@@ -244,7 +280,7 @@ export const Hero = () => {
   const openModalExperience = () => {
     setIsOpenExperience(true);
   };
-  
+
   const closeModalExperience = () => {
     setIsOpenExperience(false);
   };
@@ -252,7 +288,7 @@ export const Hero = () => {
   const openModalSkill = () => {
     setIsOpenSkill(true);
   };
-  
+
   const closeModalSkill = () => {
     setIsOpenSkill(false);
   };
@@ -260,7 +296,7 @@ export const Hero = () => {
   const openModalProject = () => {
     setIsOpenProject(true);
   };
-  
+
   const closeModalProject = () => {
     setIsOpenProject(false);
   };
@@ -268,7 +304,7 @@ export const Hero = () => {
   const openModalTestimonial = () => {
     setIsOpenTestimonial(true);
   };
-  
+
   const closeModalTestimonial = () => {
     setIsOpenTestimonial(false);
   };
@@ -276,7 +312,7 @@ export const Hero = () => {
   const openModalCertification = () => {
     setIsOpenCertification(true);
   };
-  
+
   const closeModalCertification = () => {
     setIsOpenCertification(false);
   };
@@ -284,7 +320,7 @@ export const Hero = () => {
   const openModalContact = () => {
     setIsOpenContact(true);
   };
-  
+
   const closeModalContact = () => {
     setIsOpenContact(false);
   };
@@ -292,28 +328,44 @@ export const Hero = () => {
   const openModalResume = () => {
     setIsOpenResume(true);
   };
-  
+
   const closeModalResume = () => {
     setIsOpenResume(false);
   };
-  
+
   return (
     <div id="canvas-container" className="w-full h-screen text-center">
-      <div className="w-full h-full bg-[#EAEDF6]" >
-      <Canvas camera={{ position: [0, 0, 10], fov: 40 }}>
-          <Scene openModalAbout={openModalAbout} openModalExperience={openModalExperience} openModalSkill={openModalSkill} openModalProject={openModalProject} openModalTestimonial={openModalTestimonial} openModalCertification={openModalCertification} openModalContact={openModalContact} openModalResume={openModalResume}/>
+      <div className="w-full h-full bg-[#EAEDF6]">
+        <Canvas camera={{ position: [0, 0, 10], fov: 40 }}>
+          <Scene
+            openModalAbout={openModalAbout}
+            openModalExperience={openModalExperience}
+            openModalSkill={openModalSkill}
+            openModalProject={openModalProject}
+            openModalTestimonial={openModalTestimonial}
+            openModalCertification={openModalCertification}
+            openModalContact={openModalContact}
+            openModalResume={openModalResume}
+          />
         </Canvas>
         {isOpenAbout && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalAbout();
-            }
-          }}>
-          <div className={`absolute  ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalAbout();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalAbout}>
                 <FaTimes size={30} />
               </button>
@@ -322,16 +374,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenExperience && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalExperience();
-            }
-          }}>
-            <div className={`absolute  ${
-              window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-            }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalExperience();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalExperience}>
                 <FaTimes size={30} />
               </button>
@@ -340,16 +399,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenSkill && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalSkill();
-            }
-          }}>
-          <div className={`absolute  ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalSkill();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalSkill}>
                 <FaTimes size={30} />
               </button>
@@ -358,16 +424,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenProject && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalProject();
-            }
-          }}>
-          <div className={`absolute ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalProject();
+              }
+            }}
+          >
+            <div
+              className={`absolute ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalProject}>
                 <FaTimes size={30} />
               </button>
@@ -376,16 +449,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenTestimonial && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalTestimonial();
-            }
-          }}>
-          <div className={`absolute  ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalTestimonial();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalTestimonial}>
                 <FaTimes size={30} />
               </button>
@@ -394,16 +474,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenCertification && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalCertification();
-            }
-          }}>
-          <div className={`absolute  ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalCertification();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalCertification}>
                 <FaTimes size={30} />
               </button>
@@ -412,16 +499,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenContact && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalContact();
-            }
-          }}>
-          <div className={`absolute  ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalContact();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalContact}>
                 <FaTimes size={30} />
               </button>
@@ -430,16 +524,23 @@ export const Hero = () => {
           </div>
         )}
         {isOpenResume && (
-          <div className={`fixed ${
-            window.innerWidth > 900 ? "p-[30px]" : "p-5"
-          } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`} onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              closeModalResume();
-            }
-          }}>
-          <div className={`absolute  ${
-            window.innerWidth > 900 ? "top-3 right-3 m-4" : "top-2 right-2 m-2"
-          }`}>
+          <div
+            className={`fixed ${
+              window.innerWidth > 900 ? "p-[30px]" : "p-5"
+            } inset-0 z-50 flex items-center  bg-[#EAEDF6] bg-opacity-50`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                closeModalResume();
+              }
+            }}
+          >
+            <div
+              className={`absolute  ${
+                window.innerWidth > 900
+                  ? "top-3 right-3 m-4"
+                  : "top-2 right-2 m-2"
+              }`}
+            >
               <button onClick={closeModalResume}>
                 <FaTimes size={30} />
               </button>

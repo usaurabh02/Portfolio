@@ -57,12 +57,16 @@ export const Skill = () => {
               letterSpacing: 0.5,
             }}
           >
-           TECHNICAL SKILLS
+            TECHNICAL SKILLS
           </p>
         </div>
-        <div className={` mb-3 h-full w-full p-4  items-center justify-center ${
-          window.innerWidth > 1200 ? "grid grid-cols-3 gap-[70px]" : "flex flex-wrap gap-[50px]"
-        }`}>
+        <div
+          className={` mb-3 h-full w-full p-4  items-center justify-center ${
+            window.innerWidth > 1200
+              ? "grid grid-cols-3 gap-[70px]"
+              : "flex flex-wrap gap-[50px]"
+          }`}
+        >
           <div className="skill_prog relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
             <button className="programming_item right-[15px] top-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[5px]">

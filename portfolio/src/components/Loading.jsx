@@ -3,7 +3,6 @@ import React from "react";
 export const Loading = () => {
   return (
     <div className="w-full h-screen bg-[#EAEDF6] flex flex-col items-center justify-center">
-
       <div className="px-5 w-[290px] overflow-hidden break-words">
         <p
           className="  w-full"
@@ -18,13 +17,13 @@ export const Loading = () => {
             whiteSpace: "normal",
           }}
         >
-          OPEN IN PC, TABLET OR ROTATE YOUR PHONE(ZOOM &
-          PINCH) FOR BETTER EXPERIENCE
+          OPEN IN PC, TABLET OR ROTATE YOUR PHONE(ZOOM & PINCH) FOR BETTER
+          EXPERIENCE
         </p>
       </div>
       <div className="bar mt-[80px]">
-      <div className="ball"></div>
-  </div>
+        <div className="ball"></div>
+      </div>
     </div>
   );
 };

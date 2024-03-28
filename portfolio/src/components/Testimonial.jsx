@@ -72,25 +72,25 @@ export const Testimonial = () => {
               : " gap-[50px]"
           }`}
         >
-        <TestimonialItem
-          image={Josh}
-          name="JOSH FIELD"
-          position="Technical Director & Engine Architect at Infinite Reality, Co-creator of Infinite Reality Engine"
+          <TestimonialItem
+            image={Josh}
+            name="JOSH FIELD"
+            position="Technical Director & Engine Architect at Infinite Reality, Co-creator of Infinite Reality Engine"
           />
           <TestimonialItem
-          image={Satish}
-          name="SATISH UPADHYAY"
-          position="General Manager (SADC) at Red Dot Distribution Ltd & Director at Uprising Tradex LLP"
+            image={Satish}
+            name="SATISH UPADHYAY"
+            position="General Manager (SADC) at Red Dot Distribution Ltd & Director at Uprising Tradex LLP"
           />
           <TestimonialItem
-          image={Rahul}
-          name="RAHUL GHOSH"
-          position="Engine Developer at Ethereal Engine"
+            image={Rahul}
+            name="RAHUL GHOSH"
+            position="Engine Developer at Ethereal Engine"
           />
           <TestimonialItem
-          image={Aditya}
-          name="ADITYA MITRA"
-          position="Software Developer at Ethereal Engine"
+            image={Aditya}
+            name="ADITYA MITRA"
+            position="Software Developer at Ethereal Engine"
           />
         </div>
       </div>
