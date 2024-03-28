@@ -18,7 +18,7 @@ export const Loading = () => {
             whiteSpace: "normal",
           }}
         >
-          OPEN IN PC, TABLET OR IN DESKTOP MODE WITH SCREEN ROTATION(ZOOM &
+          OPEN IN PC, TABLET OR ROTATE YOUR PHONE(ZOOM &
           PINCH) FOR BETTER EXPERIENCE
         </p>
       </div>
