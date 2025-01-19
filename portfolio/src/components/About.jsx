@@ -36,13 +36,13 @@ export const About = () => {
             whiteSpace: "normal",
           }}
         >
-          In the vast landscape of technology, there are those who simply adapt
-          and those who dare to redefine. I belong to the latter, a Computer
-          Engineering graduate with a relentless passion for crafting immersive
-          experiences beyond reality. My journey in the tech world has been a
-          thrilling adventure, driven by a thirst for knowledge. From the early
-          days of my career, I knew that I wanted to do more than just follow
-          the trends - I wanted to set them.
+          In the ever-evolving realm of technology, there are those who adapt
+          and those who dare to redefine. I proudly belong to the latter—a
+          Computer Engineering graduate with a passion for crafting
+          transformative and immersive experiences. My journey in the tech world
+          has been a thrilling adventure, driven by an insatiable thirst for
+          knowledge and innovation. From the outset of my career, I aspired to
+          do more than follow trends; I sought to set them.
         </div>
         <div
           style={{
@@ -55,15 +55,28 @@ export const About = () => {
             marginTop: "15px",
           }}
         >
-          As a Computer Engineering graduate, I have always had a passion for
-          pushing the boundaries of what's possible. My career has been defined
-          by a relentless pursuit of knowledge and a commitment to innovation.
-          My professional journey has taken me through various sectors and
-          technologies, where I've gained valuable experience and tackled
-          diverse challenges. From cloud infrastructure to ML development and XR
-          applications, I've had the opportunity to work with companies across
-          different industries, each presenting unique opportunities for growth
-          and learning.
+          As a Computer Engineering graduate, I have dedicated my career to
+          pushing the boundaries of possibility. Over the years, I have
+          accumulated extensive experience across diverse sectors and
+          cutting-edge technologies, including cloud infrastructure, machine
+          learning development, and extended reality (XR) applications. Each
+          project and collaboration has presented unique opportunities for
+          growth and learning, sharpening my ability to tackle complex
+          challenges with creativity and precision.
+        </div>
+        <div
+          style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: "500",
+            lineHeight: "1.8em",
+            fontSize: "24px",
+            color: "black",
+            letterSpacing: 1,
+            whiteSpace: "normal",
+            marginTop: "15px",
+          }}
+        >
+          Pioneering XR Innovation
         </div>
         <div
           style={{
@@ -76,15 +89,70 @@ export const About = () => {
             marginTop: "15px",
           }}
         >
-          My journey has been marked by a commitment to innovation and a desire
-          to make a difference. I am an active contributor to open-source
-          projects in the XR and AI domain, and I take pride in having developed
-          India's first WebVR player, making 360 content accessible to all, both
-          offline and online. My entrepreneurial spirit led me to embark on a
-          journey of building my startup. We're currently developing XR products
-          specifically tailored for the real estate and hospitality sectors.
-          This venture allows me to translate my technical expertise into
-          tangible solutions that address real-world needs.
+          {" "}
+          My passion for XR has driven some of my most notable achievements:
+        </div>
+        <div
+          style={{
+            fontFamily: "'Rubik', sans-serif",
+            fontWeight: "400",
+            lineHeight: "1.8em",
+            color: "black",
+            letterSpacing: -0.5,
+            whiteSpace: "normal",
+            marginTop: "5px",
+          }}
+        >
+          <ul className="list-disc list-inside">
+            <li>
+              Developed the{" "}
+              <span className="font-bold">
+                World's Most Advanced VR Tour Editor
+              </span>
+              , revolutionizing how virtual tours are created and experienced.
+              Our product delivers a VR experience that is superior to all
+              existing solutions in the market, including{" "}
+              <span className="font-bold">Matterport</span>,{" "}
+              <span className="font-bold">CloudPano</span>,{" "}
+              <span className="font-bold">Kuula</span> and etc., offering
+              unmatched immersion, customization, and ease of use.
+            </li>
+            <li>
+              Launched{" "}
+              <span className="font-bold">
+                India's First VR-Powered Property Listing Portal
+              </span>
+              , bridging innovation and real-world usability in the real estate
+              sector.
+            </li>
+            <li>
+              Currently testing 360° Video Conferencing powered by Mediasoup and
+              WebRTC, offering immersive and collaborative virtual meeting
+              solutions— <span className="font-bold">a first-of-its-kind innovation</span> for any real estate
+              listing marketplace.
+            </li>
+            <li>
+              Earned recognition as one of the{" "}
+              <span className="font-bold">Top 100 XR Developers in India</span>{" "}
+              through the prestigious{" "}
+              <span className="font-bold">XROS Fellowship</span> by Meta, FICCI,
+              and Reskill.
+            </li>
+          </ul>
+        </div>
+        <div
+          style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: "500",
+            lineHeight: "1.8em",
+            fontSize: "24px",
+            color: "black",
+            letterSpacing: 1,
+            whiteSpace: "normal",
+            marginTop: "15px",
+          }}
+        >
+          Entrepreneurial Ventures
         </div>
         <div
           style={{
@@ -97,50 +165,82 @@ export const About = () => {
             marginTop: "15px",
           }}
         >
-          One of my proudest achievements is being recognized as one of the top
-          100 XR Developers(in India) in the XROS fellowship by Meta, FICCI, and
-          Reskill. Additionally, my startup was invited for Google Startup
-          School, where we were among 40 startups invited to IIMA for a
-          networking event from more than 14,000 startups.
-        </div>
-        <div
-          style={{
-            fontFamily: "'Rubik', sans-serif",
-            fontWeight: "10",
-            lineHeight: "1.8em",
-            color: "black",
-            letterSpacing: -0.5,
-            whiteSpace: "normal",
-            marginTop: "15px",
-          }}
-        >
-          But my journey doesn't end there. Beyond technical expertise, I'm
-          deeply committed to giving back to the community. I actively volunteer
-          for multiple NGOs, including Swachh Bharat Mission, Red Dot
-          Foundation, Muskurahat Foundation, Humari Pehchan, and Smile
-          Foundation, making a positive impact. For me, technology isn't just
-          about building products; it's about using our skills and knowledge to
-          create a better world for everyone.
-        </div>
-        <div
-          style={{
-            fontFamily: "'Rubik', sans-serif",
-            fontWeight: "10",
-            lineHeight: "1.8em",
-            color: "black",
-            letterSpacing: -0.5,
-            whiteSpace: "normal",
-            marginTop: "15px",
-          }}
-        >
-          My vision extends to creating transformative solutions that enhance
-          the way we live, work, and play. Whether through AI, XR, or other
-          innovative solutions. As you explore my portfolio, you'll discover a
-          collection of my most notable projects, insights into my technical
-          skills and expertise, and a glimpse into the innovative solutions I've
-          developed.{" "}
+          As the founder of a startup specializing in XR products, I have
+          focused on delivering solutions tailored to the real estate and
+          hospitality industries. This journey has allowed me to combine
+          technical expertise with an entrepreneurial mindset, turning
+          innovative ideas into impactful, real-world applications.
         </div>
 
+        <div
+          style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: "500",
+            lineHeight: "1.8em",
+            fontSize: "24px",
+            color: "black",
+            letterSpacing: 1,
+            whiteSpace: "normal",
+            marginTop: "15px",
+          }}
+        >
+          Honored at Google Startup School
+        </div>
+
+        <div
+          style={{
+            fontFamily: "'Rubik', sans-serif",
+            fontWeight: "10",
+            lineHeight: "1.8em",
+            color: "black",
+            letterSpacing: -0.5,
+            whiteSpace: "normal",
+            marginTop: "15px",
+          }}
+        >
+          A testament to my vision and dedication, I was invited to participate
+          in Google Startup School for two consecutive years, standing out among
+          thousands of startups. This incredible opportunity provided valuable
+          insights, networking opportunities, and recognition for my startup's
+          potential.
+        </div>
+
+        <div
+          style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: "500",
+            lineHeight: "1.8em",
+            fontSize: "24px",
+            color: "black",
+            letterSpacing: 1,
+            whiteSpace: "normal",
+            marginTop: "15px",
+          }}
+        >
+          Vision for the Future
+        </div>
+
+        <div
+          style={{
+            fontFamily: "'Rubik', sans-serif",
+            fontWeight: "10",
+            lineHeight: "1.8em",
+            color: "black",
+            letterSpacing: -0.5,
+            whiteSpace: "normal",
+            marginTop: "15px",
+          }}
+        >
+          My journey is defined by a relentless pursuit of innovation and a
+          desire to make an impact. Whether it's through AI, XR, or other
+          groundbreaking technologies, I am committed to developing solutions
+          that enhance how we live, work, and connect. As you explore my
+          portfolio, you will discover a showcase of my most notable projects,
+          technical expertise, and a glimpse into the transformative solutions
+          I’ve developed. I am eager to bring my skills, passion, and vision to
+          new opportunities, collaborating with teams that share my drive for
+          innovation and excellence.
+        </div>
         <div className="p-4 text-[20px] mt-4 mb-2 sm:text-[24px]">
           <p
             style={{

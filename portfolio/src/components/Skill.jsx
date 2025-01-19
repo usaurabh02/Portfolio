@@ -68,25 +68,39 @@ export const Skill = () => {
           }`}
         >
           <div className="skill_prog relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-            <button className="programming_item right-[15px] top-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="programming_item right-[15px] top-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[5px]">
                 <img src={Python} alt="python" />
               </span>
+              {/* Tooltip */}
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Python Programming
+              </div>
             </button>
-            <button className="profile_item left-[15px] top-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+
+            <button className="profile_item left-[15px] top-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[7px]">
                 <img src={Js} alt="js" className="rounded-[20%]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                JavaScript Programming
+              </div>
             </button>
-            <button className="profile_item left-[15px] bottom-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[15px] bottom-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[7px]">
                 <img src={Ts} alt="Ts" className="rounded-[20%]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                TypeScript Programming
+              </div>
             </button>
-            <button className="profile_item right-[15px] bottom-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[15px] bottom-5 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[5px]">
                 <img src={Csharp} alt="Csharp" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                C# Programming
+              </div>
             </button>
             <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
               <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
@@ -96,7 +110,7 @@ export const Skill = () => {
           </div>
 
           <div className="skill_webdev relative p-11 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img
                   src={CvatF}
@@ -104,8 +118,11 @@ export const Skill = () => {
                   className="h-full rounded-full"
                 />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Cvat
+              </div>
             </button>
-            <button className="profile_item -left-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -left-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[6px]">
                 <img
                   src={KerasF}
@@ -113,21 +130,33 @@ export const Skill = () => {
                   className="h-full rounded-full"
                 />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Keras
+              </div>
             </button>
-            <button className="profile_item -right-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -right-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[6px]">
                 <img src={OpenCVF} alt="mui" className="" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                OpenCV
+              </div>
             </button>
-            <button className="profile_item left-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[7px]">
                 <img src={TensorF} alt="tensorflow" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Tensorflow
+              </div>
             </button>
-            <button className="profile_item right-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-2">
                 <img src={PytorchF} alt="Next" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Pytorch
+              </div>
             </button>
             <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
               <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
@@ -137,40 +166,61 @@ export const Skill = () => {
           </div>
 
           <div className="skill_webdev relative p-11 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white">
                 <img src={Spark} alt="spark" className="bg-transparent" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                SparkAR
+              </div>
             </button>
-            <button className="profile_item left-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[6px]">
                 <img src={Unity} alt="unity" className="h-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Unity
+              </div>
             </button>
-            <button className="profile_item right-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[5px]">
                 <img src={Lens} alt="lens" className="h-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Lens Studio
+              </div>
             </button>
-            <button className="profile_item left-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[2px]">
                 <img src={ThreeJs} alt="threejs" className="ml-1 mt-[2px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                ThreeJS
+              </div>
             </button>
-            <button className="profile_item -left-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -left-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Aframe} alt="aframe" className="mt-[2px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                AFrame
+              </div>
             </button>
-            <button className="profile_item -right-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -right-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1.5">
                 <img src={Blender} alt="blender" className="" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Blender
+              </div>
             </button>
-            <button className="profile_item right-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={R3F} alt="r3f" className="rounded-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                React Three Fiber
+              </div>
             </button>
             <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
               <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
@@ -180,40 +230,61 @@ export const Skill = () => {
           </div>
 
           <div className="skill_webdev relative p-11 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Kubeflow} alt="kubeflow" className="" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Kubeflow
+              </div>
             </button>
-            <button className="profile_item left-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[4px]">
                 <img src={Bqml} alt="bqml" className="h-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                BigQuery ML
+              </div>
             </button>
-            <button className="profile_item right-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[8px] bottom-[32px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[1px]">
                 <img src={Automl} alt="automl" className="h-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                AutoML
+              </div>
             </button>
-            <button className="profile_item left-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Aws} alt="aws" className="" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                AWS
+              </div>
             </button>
-            <button className="profile_item -left-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -left-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[7px]">
                 <img src={Azure} alt="azure" className="mt-[-3px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Azure
+              </div>
             </button>
-            <button className="profile_item -right-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -right-[20px] top-[90px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Vertex} alt="vertexai" className="h-full mt-[2px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Vertex AI
+              </div>
             </button>
-            <button className="profile_item right-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[49px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Gcp} alt="gcp" className="" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                GCP
+              </div>
             </button>
             <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
               <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
@@ -223,35 +294,53 @@ export const Skill = () => {
           </div>
 
           <div className="skill_webdev relative p-11 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-            <button className="profile_item right-[42px] top-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[42px] top-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Terra} alt="terra" className="mt-[3px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Terraform
+              </div>
             </button>
-            <button className="profile_item left-[42px] top-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[42px] top-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Dock} alt="docker" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Docker
+              </div>
             </button>
-            <button className="profile_item -left-[23px] top-[120px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -left-[23px] top-[120px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Kube} alt="kubernets" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Kubernetes
+              </div>
             </button>
-            <button className="profile_item -right-[23px] top-[120px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -right-[23px] top-[120px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={Git} alt="git" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Git
+              </div>
             </button>
-            <button className="profile_item left-[42px] bottom-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[42px] bottom-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group ">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-2">
                 <img src={GitHA} alt="githubaction" className="" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Github Action
+              </div>
             </button>
-            <button className="profile_item right-[42px] bottom-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[42px] bottom-[0px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[7px]">
                 <img src={GitL} alt="gitlab" className="mt-[3px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Gitlab
+              </div>
             </button>
             <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
               <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
@@ -261,30 +350,45 @@ export const Skill = () => {
           </div>
 
           <div className="skill_webdev relative p-11 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[122px] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={MsoupIcon} alt="mediasoup" className="h-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Mediasoup
+              </div>
             </button>
-            <button className="profile_item -left-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -left-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={TailwindIcon} alt="tailwind" className="h-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Tailwind
+              </div>
             </button>
-            <button className="profile_item -right-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -right-[16px] bottom-[80px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-[7px]">
                 <img src={MuiIcon} alt="mui" className="mt-[6px]" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Material UI
+              </div>
             </button>
-            <button className="profile_item left-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item left-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={ReactIcon} alt="React" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                React JS
+              </div>
             </button>
-            <button className="profile_item right-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[22px] top-[15px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50  active:scale-95 hover:scale-95 transition-all duration-500 group">
               <span className="block w-[45px] h-[45px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                 <img src={NextIcon} alt="Next" className="h-full w-full" />
               </span>
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[50px] px-3 py-1 text-sm text-black bg-slate-400/50 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[10]">
+                Next JS
+              </div>
             </button>
             <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
               <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">

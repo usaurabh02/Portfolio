@@ -5,7 +5,7 @@ import AwsCa from "../assets/awsca.png";
 import AwsCf from "../assets/awscf.png";
 import MsPP from "../assets/mspp.png";
 import MsAZ from "../assets/msaz.png";
-import Sfpc from "../assets/sfpc.png";
+import TensorF from "../assets/tensorF.png";
 import Dlsp from "../assets/dlsp.png";
 
 const CertificationItem = ({ image, name, organisation, verify }) => {
@@ -98,13 +98,20 @@ export const Certification = () => {
           }`}
         >
           <CertificationItem
-            image={GcpA}
-            name="Associate Cloud Engineer"
-            organisation="Google Cloud"
+            image={TensorF}
+            name="Tensorflow Developer Certificate"
+            organisation="Tensorflow"
             verify={
-              "https://www.credential.net/a8d15dd8-05f4-4500-8b95-4eccc7c7534a"
+              "https://www.credential.net/2e5da35d-1a08-44e5-809d-086d97218419"
             }
-          />
+          /><CertificationItem
+          image={GcpA}
+          name="Associate Cloud Engineer"
+          organisation="Google Cloud"
+          verify={
+            "https://www.credential.net/a8d15dd8-05f4-4500-8b95-4eccc7c7534a"
+          }
+        />
           <CertificationItem
             image={GcpCd}
             name="Cloud Digital Leader"

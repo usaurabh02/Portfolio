@@ -5,6 +5,9 @@ import Vambox from "../assets/vambox.png";
 import DataA from "../assets/daaa.png";
 import Dlp from "../assets/dlp.png";
 import Mlp from "../assets/ml1.png";
+import Astra from "../assets/astra3d.png";
+import Propal from "../assets/propalty.png";
+
 
 const ProjectItem = ({ image, name, organisation, verify }) => {
   return (
@@ -102,6 +105,18 @@ export const Project = () => {
               : " gap-[50px]"
           }`}
         >
+          <ProjectItem
+            image={Astra}
+            name="Astra3D"
+            organisation="Worlds Most  Advanced VR Tour Platform."
+            verify={"https://astra3d.com/"}
+          />
+          <ProjectItem
+            image={Propal}
+            name="Propalty"
+            organisation="India's first VR powered Real Estate Platform."
+            verify={"https://propalty.com/"}
+          />
           <ProjectItem
             image={Reealtech}
             name="Reealtech"

@@ -120,24 +120,25 @@ export const Experience = () => {
         >
           <ExperienceItem
             title="Reealtech (Uprising Tradex LLP)"
-            role="Founder & Lead SDE"
+            role="Founder & Lead XR Developer"
             date="Aug 2022 - Present"
             responsibilities={[
               {
-                text: "Spearheaded the development of India's first free WebVR player.",
+                text: "Pioneered the Development of the World's Most Advanced Virtual Tour Editor, delivering a superior VR experience that surpasses leading products like Matterport, CloudPano, and Kuula. This innovative tool empowers users with unmatched customization, seamless usability, and immersive quality.",
               },
               {
-                text: "Lead development of a virtual tour editor for hotels & real estate:",
-                points: [
-                  "Utilized cloud technologies (GCP, Azure) & infrastructure automation (Terraform).",
-                  "Build 360 video conferencing using mediasoup and webrtc.",
-                ],
+                text: "Currently testing 360° Video Conferencing powered by Mediasoup and WebRTC, providing immersive and collaborative virtual meeting solutions.",
+
               },
               {
-                text: "Building a dedicated VR marketplace for hospitality and real estate.",
+                text: "Automated CI/CD Pipelines to streamline deployment processes, ensuring rapid and reliable updates across all development stages.",
+
               },
               {
-                text: "Collaborate with cross-functional teams: Seamlessly integrate ML models into production for enhanced project efficiency (Freelance).",
+                text: "Built VR Marketplaces for the real estate sectors, revolutionizing how properties are showcased and experienced.",
+              },
+              {
+                text: "Contributed to freelance projects by delivering automation solutions using AWS Lambda, optimizing workflows and boosting efficiency for clients.",
               },
             ]}
           />
